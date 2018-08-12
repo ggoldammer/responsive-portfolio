@@ -22,7 +22,7 @@ p {
 
 header {
     background-color: #fff;
-    overflow: auto;
+    height: 76px;
     margin-bottom: 30px;
     border-bottom: 2px solid #EEEFF0;
 }
@@ -216,4 +216,91 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #2f8196;
+}
+
+
+@media only screen and (max-width: 980px){
+    header div{
+        width: 860px;
+    }
+
+    main {
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header {
+        height: 61px;
+    }
+
+    header div {
+        width: 638px;
+    }
+
+    main {
+        width: 600px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 27px;
+    }
+
+    .port-image {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    header {
+        margin-bottom: 60px;
+    }
+
+    header div {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header div h1 {
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fff;
+    }
+
+    nav ul {
+        padding: 20px 10px;
+    }
+
+    main {
+        clear: both;
+        width: 300px;
+    }
+    div h1 {
+        font-size: 20px;
+        padding: 34px;
+    }
+
+    .float-left {
+        float: none;
+        display: block;
+    }
+
+    .port-image{
+        float: none;
+        display: block;
+        width: 100%;
+    }
 }
